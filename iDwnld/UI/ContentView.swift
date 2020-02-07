@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let lgs = Controller.downloadMarkets()
+    
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                Text("Hola")
+            }.navigationBarTitle("Ola k ase")
+        }
     }
 }
 
