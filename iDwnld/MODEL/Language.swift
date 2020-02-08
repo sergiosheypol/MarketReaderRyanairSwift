@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Language: Codable {
+struct Language: Codable, Hashable {
     var code: String
     var name: String
     var languageCode: String

@@ -8,15 +8,24 @@
 
 import Foundation
 
-class Controller {
+class Controller: ObservableObject {
     
-    static let urlString = "https://www.ryanair.com/content/ryanair.markets.json"
     
-    static var languages: [Language]? = nil
+    private let urlString = "https://www.ryanair.com/content/ryanair.markets.json"
+    
+    private var languages: [Language]? = nil
 
-    static let decoder = JSONDecoder()
+    private let decoder = JSONDecoder()
     
-    static func downloadMarkets() {
+    func getLanguages() -> [Language] {
+        if languages == nil {
+            return [Language(code: "", name: "", languageCode: "", languageName: "", path: "")]
+        }
+        
+        return languages!
+    }
+    
+    func downloadMarkets() {
         
         guard let url = URL(string: self.urlString) else {
             print("Error in URL")
@@ -31,6 +40,8 @@ class Controller {
         do {
             
             self.languages = try decoder.decode([Language].self, from: data)
+            
+            print("Download OK")
             
         } catch let error as NSError {
             print("Failed to load: \(error.localizedDescription)")

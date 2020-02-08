@@ -10,14 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let lgs = Controller.downloadMarkets()
-    
-    
+    @EnvironmentObject var controller: Controller
     
     var body: some View {
-        NavigationView {
+        
+         NavigationView {
             VStack {
-                Text("Hola")
+                List{
+                    ForEach(controller.getLanguages(), id: \.self) { item in
+                        Text(item.code)
+                    }
+                }
+                
             }.navigationBarTitle("Ola k ase")
         }
     }
