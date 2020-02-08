@@ -12,22 +12,25 @@ struct ContentView: View {
     
     @EnvironmentObject var controller: Controller
     
+    
     var body: some View {
         
          NavigationView {
             VStack {
                 List{
                     ForEach(controller.getLanguages(), id: \.self) { item in
-                        Text(item.code)
+                        RowItemView(language: item)
                     }
                 }
                 
-            }.navigationBarTitle("Ola k ase")
+            }.navigationBarTitle("Available markets")
+            .listStyle(GroupedListStyle())
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+        
     static var previews: some View {
         ContentView()
     }

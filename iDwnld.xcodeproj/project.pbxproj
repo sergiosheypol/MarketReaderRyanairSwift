@@ -15,6 +15,8 @@
 		4180312323EDD2EB0099A62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4180312123EDD2EB0099A62B /* LaunchScreen.storyboard */; };
 		4180312C23EDD6E60099A62B /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180312B23EDD6E60099A62B /* Controller.swift */; };
 		4180312F23EDDD3A0099A62B /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180312E23EDDD3A0099A62B /* Language.swift */; };
+		4180313223EED3FF0099A62B /* RowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180313123EED3FF0099A62B /* RowItemView.swift */; };
+		4180313423EED5910099A62B /* LanguageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180313323EED5910099A62B /* LanguageDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4180312423EDD2EB0099A62B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4180312B23EDD6E60099A62B /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		4180312E23EDDD3A0099A62B /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		4180313123EED3FF0099A62B /* RowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItemView.swift; sourceTree = "<group>"; };
+		4180313323EED5910099A62B /* LanguageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				4180311A23EDD2EA0099A62B /* ContentView.swift */,
+				4180313123EED3FF0099A62B /* RowItemView.swift */,
+				4180313323EED5910099A62B /* LanguageDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -178,8 +184,10 @@
 			files = (
 				4180311723EDD2EA0099A62B /* AppDelegate.swift in Sources */,
 				4180312F23EDDD3A0099A62B /* Language.swift in Sources */,
+				4180313423EED5910099A62B /* LanguageDetailView.swift in Sources */,
 				4180311923EDD2EA0099A62B /* SceneDelegate.swift in Sources */,
 				4180311B23EDD2EA0099A62B /* ContentView.swift in Sources */,
+				4180313223EED3FF0099A62B /* RowItemView.swift in Sources */,
 				4180312C23EDD6E60099A62B /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

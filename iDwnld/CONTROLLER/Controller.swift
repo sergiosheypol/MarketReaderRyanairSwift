@@ -13,7 +13,7 @@ class Controller: ObservableObject {
     
     private let urlString = "https://www.ryanair.com/content/ryanair.markets.json"
     
-    private var languages: [Language]? = nil
+    @Published private var languages: [Language]? = nil
 
     private let decoder = JSONDecoder()
     
